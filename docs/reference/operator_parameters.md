@@ -59,6 +59,13 @@ words.
   forcefully](https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods)
   after this timeout. The default is `5m`.
 
+* **pod_priority_class_name**
+  The name of the
+  [PriorityClass](https://kubernetes.io/docs/concepts/configuration/pod-priority-preemption/)
+  for the pods created by the operator. Can be overridden by per-cluster
+  `priorityClassName` parameter. The default is empty (pod is not assigned any
+  custom priority). 
+
 * **watched_namespace**
   The operator watches for postgres objects in the given namespace. If not
   specified, the value is taken from the operator namespace. A special `*`

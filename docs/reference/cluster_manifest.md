@@ -90,6 +90,10 @@ Those are parameters grouped directly under  the `spec` key in the manifest.
   for details on tolerations and possible values of those keys. When set, this
   value overrides the `pod_toleration` setting from the operator. Optional.
 
+* **priorityClassName**
+  the name of the [PriorityClass](https://kubernetes.io/docs/concepts/configuration/pod-priority-preemption/)
+  for the cluster pods. Optional.
+
 ## Postgres parameters
 
 Those parameters are grouped under the `postgresql` top-level key.

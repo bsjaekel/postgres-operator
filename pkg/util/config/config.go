@@ -75,6 +75,7 @@ type Config struct {
 	PodServiceAccountName string `name:"pod_service_account_name" default:"operator"`
 	// value of this string must be valid JSON or YAML; see initPodServiceAccount
 	PodServiceAccountDefinition string `name:"pod_service_account_definition" default:""`
+	PodPriorityClassName string `name:"pod_priority_class_name" default:""`
 	DbHostedZone                string `name:"db_hosted_zone" default:"db.example.com"`
 	WALES3Bucket                string `name:"wal_s3_bucket"`
 	LogS3Bucket                 string `name:"log_s3_bucket"`

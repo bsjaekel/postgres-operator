@@ -474,6 +474,7 @@ func (c *Cluster) generatePodTemplate(
 		TerminationGracePeriodSeconds: &terminateGracePeriodSeconds,
 		Containers:                    []v1.Container{container},
 		Tolerations:                   c.tolerations(tolerationsSpec),
+
 	}
 
 	if affinity := c.nodeAffinity(); affinity != nil {
